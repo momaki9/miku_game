@@ -3,13 +3,19 @@
     <p class="title">
       All Available Characters
     </p>
-    <p class="subtitle">
-       {{#each characters as |char|}}
-            <p>{{char.name}}</p>
-            <figure class="box tile is-child">
-            <img src="./assets/img/{{char.image}}.jpg"/>
-            </figure>
-        {{/each}}
-    </p>
+    <div class="tile is-ancestor">
+      {{#each characters as |char|}}
+      <div class="tile is-parent">
+        <article class="tile is-child" id="parent-container">
+          <p class="title">{{char.name}}</p>
+          {{!-- <p class="subtitle">What is up?</p> --}}
+          <figure>
+            <img src="./assets/img/{{char.image}}.jpg" />
+          </figure>
+          <p class="title is-4">{{char.rarity}}</p>
+        </article>
+      </div>
+      {{/each}}
+    </div>
   </div>
 </section>

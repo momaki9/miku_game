@@ -15,3 +15,31 @@
     padding-bottom: 0;
     height: 20%;
 }
+
+#login, #signup {
+    padding-left: 6%;
+}
+
+
+#home-page {
+    padding-top: 3%;
+    padding-left: 26%;
+}
+
+#visit-page {
+    padding-top: 2%;
+}
+
+#visit-image {
+    border-radius: 30px;
+    padding: 6%;
+}
+
+#miku-details {
+    padding-left: 8%;
+}
+
+#parent-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+}

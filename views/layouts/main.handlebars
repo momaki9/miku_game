@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
     <header class="hero is-small is-warning" id="header-section">
         <div class="hero-body level">
@@ -16,51 +18,55 @@
             <div class="dropdown is-hoverable level-right">
                 <div class="dropdown-trigger">
                     <figure class="image is-128x128">
-                        <!-- use reference to image from data-->
                         <img class="is-rounded" id="profile-icon" src="./assets/img/{{serializedData.name}}.png">
                     </figure>
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                <div class="dropdown-content">
-                    <a href="/home" class="dropdown-item">
-                        Home
-                    </a>
-                    <a href="/archive" class="dropdown-item">
-                        Archive
-                    </a>
-                    <a href="/visit" class="dropdown-item">
-                        Visit
-                    </a>
-                    {{!-- <a href="/lottery" class="dropdown-item">
-                        Lottery
-                    </a> --}}
-                    <hr class="dropdown-divider">
-                    {{!-- TODO create logout logic --}}
-                    <button class="dropdown-item" id="logout">Logout</button>
-                    {{!-- <a href="#" class="dropdown-item" id="logout">
-                        Logout
-                    </a> --}}
+                    <div class="dropdown-content">
+                        <a href="/home" class="dropdown-item">
+                            Home
+                        </a>
+                        <a href="/visit" class="dropdown-item">
+                            Visit
+                        </a>
+                        <a href="/archive" class="dropdown-item">
+                            Archive
+                        </a>
+                        {{!-- <a href="/lottery" class="dropdown-item">
+                            Lottery
+                        </a> --}}
+                        <hr class="dropdown-divider">
+                        <button class="dropdown-item" id="logout">Logout</button>
+                    </div>
                 </div>
-                </div>
-                </div>
+            </div>
             {{/if}}
         </div>
     </header>
-    <main  class="tile is-ancestor" id="side-bar">
+    <main class="tile is-ancestor" id="side-bar">
         <nav class="menu secion is-large">
-            <a href="/home"><h2 class="navbar-item">Home</h2></a>
+            <a href="/home">
+                <h2 class="navbar-item">Home</h2>
+            </a>
             <br>
-            <a href="/archive"><h2 class="navbar-item">Archive</h2></a>
+            <a href="/visit">
+                <h2 class="navbar-item">Visit</h2>
+            </a>
             <br>
-            <a href="/visit"><h2 class="navbar-item">Visit</h2></a>
+            <a href="/archive">
+                <h2 class="navbar-item">Archive</h2>
+            </a>
             <br>
-            {{!-- <a href="/lottery"><h2 class="navbar-item">Lottery</h2></a>
+            {{!-- <a href="/lottery">
+                <h2 class="navbar-item">Lottery</h2>
+            </a>
             <br> --}}
         </nav>
-    {{{ body }}}
+        {{{ body }}}
     </main>
-     {{#if logged_in}}
-     <script src="/js/logout.js"></script>
-     {{/if}}
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
+
 </html>

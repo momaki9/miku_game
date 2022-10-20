@@ -1,10 +1,10 @@
-<div class="tile is-parent">
-        <h3 class="tile tag title is-4">Greetings, {{serializedData.name}}!</h3>
+<div class="tile is-parent" id="visit-page">
+        {{!-- <h3 class="tile tag title is-4">Greetings, {{serializedData.name}}!</h3> --}}
         {{#each serializedData.charUsers as |chars|}}
-        <figure class="box tile is-child">
+        <figure class="box tile is-child" id="visit-image">
             <img src="./assets/img/{{chars.char.image}}.jpg"/>
         </figure>
-        <div class="menu tile is-child">
+        <div class="menu tile is-child" id="miku-details">
             <h2 class="title is-4">Your Miku character details:</h2> 
             <p class="title is-5">{{chars.char.name}}</p>
             <p class="title is-6">Rarity: <i>{{chars.char.rarity}}</i></p>

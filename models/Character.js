@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Character extends Model {}
+class Character extends Model { }
 
 Character.init(
   {
@@ -15,17 +15,11 @@ Character.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    //default value needed?
     hunger: {
       type: DataTypes.INTEGER,
     },
-    //default value needed? also numerical value or text?
-    // mood: {
-    //     type: DataTypes.STRING,
-    // },
-    // do we want numerical values or text (i.e. common, very rare, etc)
     rarity: {
-        type: DataTypes.STRING,
+      type: DataTypes.STRING,
     },
     date_collected: {
       type: DataTypes.DATE,
