@@ -24,7 +24,7 @@
     "express-session": "^1.17.1",
     "jdenticon": "^3.2.0",
     "mysql2": "^2.2.5",
-    
+    "nodemon": "^2.0.20",
     "sequelize": "^6.25.0"
   },
   "devDependencies": {
