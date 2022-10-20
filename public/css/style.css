@@ -1,0 +1,17 @@
+
+#profile-icon {
+    border-radius: 16px;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#side-bar {
+    padding-left: 2%;
+}
+
+#header-section {
+    padding-bottom: 0;
+    height: 20%;
+}

@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Halloween Miku",
+      "hunger": 10,
+      "rarity": "Ultra Rare",
+      "image": "halloweenmiku"
+    },
+    {
+      "name": "Space Miku",
+      "hunger": 9,
+      "rarity": "Common",
+      "image": "spacemiku"
+    },
+    {
+      "name": "Christmas Miku",
+      "hunger": 8,
+      "rarity": "Rare",
+      "image": "christmasmiku"
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+    {
+        "character_id": 3,
+        "user_id": 2,
+        "mood": 55
+    },
+    {
+        "character_id": 2,
+        "user_id": 3,
+        "mood": 51
+    },
+    {
+        "character_id": 1,
+        "user_id": 1,
+        "mood": 53
+    },
+    {
+        "character_id": 1,
+        "user_id": 2,
+        "mood": 59
+    },
+    {
+        "character_id": 2,
+        "user_id": 1,
+        "mood": 67
+    }
+]

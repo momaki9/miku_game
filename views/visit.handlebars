@@ -1,0 +1,18 @@
+<div class="tile is-parent">
+        <h3 class="tile tag title is-4">Greetings, {{serializedData.name}}!</h3>
+        <figure class="box tile is-child">
+            <img src="./assets/img/placeholder.svg"/>
+        </figure>
+        <div class="menu tile is-child">
+            <h2 class="title is-4">Character details</h2> 
+            {{#each serializedData.charUsers as |char|}}
+            <p id="current-mood">{{char.mood}}</p>
+            
+            <button class="button menu-item" id="mood-btn" data-id="{{char.character_id}}">Hug</button>
+            {{/each}}
+            {{!-- <a href="#" class="button"><h2 class="menu-item">Play</h2></a>
+            <a href="#" class="button"><h2 class="menu-item">Feed</h2></a> --}}
+
+        </div>
+</div>
+<script src="./js/mood.js"></script>

@@ -1,0 +1,15 @@
+<section class="hero">
+  <div class="hero-body">
+    <p class="title">
+      All Available Characters
+    </p>
+    <p class="subtitle">
+       {{#each serializedData.chars as |char|}}
+            <p>{{char.name}}</p>
+            <figure class="box tile is-child">
+            <img src="./assets/img/{{char.image}}.jpg"/>
+            </figure>
+        {{/each}}
+    </p>
+  </div>
+</section>
