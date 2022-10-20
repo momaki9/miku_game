@@ -19,7 +19,6 @@ const selectCharacter = async (event) => {
   }
 };
 
-
 for (let index = 0; index < btn.length; index++) {
   btn[index].addEventListener('click', selectCharacter)
 
