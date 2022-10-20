@@ -1,18 +1,19 @@
 <div class="tile is-parent">
         <h3 class="tile tag title is-4">Greetings, {{serializedData.name}}!</h3>
+        {{#each serializedData.charUsers as |chars|}}
         <figure class="box tile is-child">
-            <img src="./assets/img/placeholder.svg"/>
+            <img src="./assets/img/{{chars.char.image}}.jpg"/>
         </figure>
         <div class="menu tile is-child">
-            <h2 class="title is-4">Character details</h2> 
-            {{#each serializedData.charUsers as |char|}}
-            <p id="current-mood">{{char.mood}}</p>
+            <h2 class="title is-4">Your Miku character details:</h2> 
+            <p class="title is-5">{{chars.char.name}}</p>
+            <p class="title is-6">Rarity: <i>{{chars.char.rarity}}</i></p>
+            <p  class="title is-6" id="current-mood">{{chars.mood}}</p>
             
-            <button class="button menu-item" id="mood-btn" data-id="{{char.character_id}}">Hug</button>
+            <button class="button menu-item" id="mood-btn" data-id="{{chars.character_id}}">Give {{chars.char.name}} A Hug!</button>
             {{/each}}
             {{!-- <a href="#" class="button"><h2 class="menu-item">Play</h2></a>
             <a href="#" class="button"><h2 class="menu-item">Feed</h2></a> --}}
-
         </div>
 </div>
 <script src="./js/mood.js"></script>

@@ -1,18 +1,34 @@
 <div class="tile is-parent">
     <section class="tile is-child">
-        <h3 class="title tile is-4">Greetings, {{name}}!!</h3>
-        {{#if chars}}
-        {{#each chars as |char|}}
+        <h3 class="title tile is-4">Greetings, {{serializedData.name}}!!</h3>
+        {{#if serializedData.charUsers}}
+        {{#each serializedData.charUsers as |charuser|}}
+      
         <figure class="tile is-10">
-            <img src="./assets/img/{{char.image}}.jpg" width="35%"/>
+            <img src="./assets/img/{{charuser.char.image}}.jpg" width="35%" />
         </figure>
-        <h2 class="title tile is-4">Character details</h2> 
-        <h3 class="title is-5">Name: {{char.name}}</h3>
-        <h3 class="title is-5">Rarity: {{char.rarity}}</h3>
-        {{/each}}
+        <h2 class="title tile is-4">Character details</h2>
+        <h3 class="title is-5">Name: {{charuser.char.name}}</h3>
+        <h3 class="title is-5">Rarity: {{charuser.char.rarity}}</h3>
+     
+         {{/each}}
     </section>
-        {{else}}
-        <h2>Choose a character</h2>
-        {{!-- TODO need first user login logic --}}
-        {{/if}} 
+
+    {{else}}
+    <h2>Choose a character</h2>
+    {{#each characters}}
+    <button type="button" class="char" value="{{id}}">
+       
+            <figure class="tile is-10">
+                <img src="./assets/img/{{image}}.jpg" width="35%" />
+            </figure>
+            <h2 class="title tile is-4">Character details</h2>
+            <h3 class="title is-5">Name: {{name}}</h3>
+            <h3 class="title is-5">Rarity: {{rarity}}</h3>
+
+    </button>
+    {{/each}}
+    {{/if}}
 </div>
+
+<script src="/js/charSelect.js"></script>

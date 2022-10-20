@@ -15,6 +15,20 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+router.post('/charuser', withAuth, async (req, res) => {
+  try {
+    
+    const newProject = await CharUser.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
+
+    res.status(200).json(newProject);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 router.get('/:id', async (req, res) => {
   try {
     const testData = await Character.findByPk(req.params.id, {
