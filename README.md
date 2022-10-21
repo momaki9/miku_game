@@ -21,4 +21,8 @@ Jose Garcia: jg-watson
 
 ## [Link to Depolyed Application on Heroku](https://fierce-tundra-24607.herokuapp.com/)
 
-## [Link to Code on GitHub](https://github.com/ayeshaqb/team9_project2)
+## [Link to Group GitHub](https://github.com/ayeshaqb/team9_project2)
+
+## [Link to Code on My GitHub](https://github.com/momaki9/miku_game)
+
+## [Link to PowerPoint Presentation](https://docs.google.com/presentation/d/1kDkiXbU2xlwtQRRSMflPgWgD3UfczVkhFf51GychSNs/edit?usp=sharing)
